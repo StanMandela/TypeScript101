@@ -10,7 +10,7 @@ let character ="mario";
 
     return diameter* Math.PI
  }
- console.log("circle", circ(14))
+ //console.log("circle", circ(14))
 
 /*
 Arrays
@@ -35,7 +35,7 @@ NB-> If you declare an array that
  //Mixed Array
  let mixedArray=['Ken',8,10,true]
  mixedArray.push()
- console.log('Mixed', mixedArray)
+ //console.log('Mixed', mixedArray)
 
 
 /* 
@@ -115,7 +115,7 @@ ninjaOb2={
     beltCOlor:'blasl',
 
 }
-console.log('Obdject',ninjaOb2)
+//console.log('Obdject',ninjaOb2)
 
 
 /* ANY KEY WORD */

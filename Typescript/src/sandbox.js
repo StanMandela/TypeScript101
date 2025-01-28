@@ -17,7 +17,7 @@ character = "Stanley";
 var circ = function (diameter) {
     return diameter * Math.PI;
 };
-console.log("circle", circ(14));
+//console.log("circle", circ(14))
 /*
 Arrays
 NB-> If you declare an array that
@@ -34,7 +34,7 @@ var numbers = [10, 11, 12, 3, 4];
 //Mixed Array
 var mixedArray = ['Ken', 8, 10, true];
 mixedArray.push();
-console.log('Mixed', mixedArray);
+//console.log('Mixed', mixedArray)
 /*
  //OBJECTS
   Note that the type of a variables declared in the object cant be changed
@@ -87,7 +87,7 @@ ninjaOb2 = {
     age: 28,
     beltCOlor: 'blasl',
 };
-console.log('Obdject', ninjaOb2);
+//console.log('Obdject',ninjaOb2)
 /* ANY KEY WORD */
 var age1 = 25;
 var nina;
