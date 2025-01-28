@@ -33,9 +33,10 @@ type StringOrNum=string|number;
 type User={name:string,age:StringOrNum}
 
 const greet=(user:User)=>{
-    console.log(`${user.name} says hello`)
+    console.log(`${user.name}  of age ${user.age} says hello`)
 }
 
+greet({name:'mario',age:30})
 //creating a function signature
 let greets: Function;
 

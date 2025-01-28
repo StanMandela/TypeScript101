@@ -23,8 +23,9 @@ const multiply = (a, b) => {
 let result2 = multiply(5, 10);
 console.log(result2);
 const greet = (user) => {
-    console.log(`${user.name} says hello`);
+    console.log(`${user.name}  of age ${user.age} says hello`);
 };
+greet({ name: 'mario', age: 30 });
 //creating a function signature
 let greets;
 let greetsFunc;
