@@ -35,6 +35,7 @@ export default defineComponent({
 
         }
     },
+    //using composition api and computed values
     setup(props){
         const orderedJobs= computed(()=>{
             return [...props.jobs].sort((a:Job,b:Job)=>{
