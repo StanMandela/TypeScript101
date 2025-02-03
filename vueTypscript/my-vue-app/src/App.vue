@@ -1,6 +1,5 @@
 <template>
   <div class="app">
-    <button @click="changeName('title')">Change Name</button>
 
     <button @click="handleClick('title')">Order By title</button>
     <button @click="handleClick('salary')">Order By Salary</button>
@@ -50,12 +49,15 @@ export default defineComponent({
       {title:'Eletrician',location:'Kisumu', salary:5090,id:'5'}
     ])
     const order = ref<OrderTerm>('title');
+    const changeName =(name:string)=>{
+      state.name = name
+    }
 
     const handleClick =(term:OrderTerm)=>{
       order.value = term
     }
 
-    return {jobs, handleClick,order};
+    return {jobs, handleClick, order, ...toRefs(state)};
   },
   // methods:{
   //   changeName(name :string){

@@ -26,6 +26,7 @@ export default defineComponent({
     props:{
         jobs:{
             required:true,
+            //
             type: Array as PropType<Job[]>
         },
         order:{
