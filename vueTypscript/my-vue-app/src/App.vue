@@ -1,10 +1,13 @@
 <template>
   <div class="app">
+    <button @click="changeName('title')">Change Name</button>
+
     <button @click="handleClick('title')">Order By title</button>
     <button @click="handleClick('salary')">Order By Salary</button>
     <button @click="handleClick('location')">Order By Loaction</button>
 
    <JobsList :jobs="jobs" :order="order"/>
+   {{ name }}
 
   </div>
 </template>
@@ -23,16 +26,17 @@ export default defineComponent({
   
   //using composition api
   setup(){
+
     /* composition api using reactive */
-    // const state= reactive({
-    //   name:'Link',
-    //   age: 25 as number | string
-    // })
+    const state= reactive({
+      name:'Link',
+      age: 25 as number | string
+    })
     // state.name=999
 
     // return{...toRefs(state)}
 
-  /* composition api using refs */
+  /* composition api using refs we use generic types insteaad of  type assertions */
     // const name = ref('link')
     // const age = ref<number|string>(25)
 
@@ -53,15 +57,15 @@ export default defineComponent({
 
     return {jobs, handleClick,order};
   },
-  methods:{
-    changeName(name :number){
-      this.name =name
-    },
-    changeAge(age:number|string|boolean){
-      this.age = age
+  // methods:{
+  //   changeName(name :string){
+  //     this.name =name
+  //   },
+  //   changeAge(age:number|string|boolean){
+  //     this.age = age
 
-    }
-  }
+  //   }
+  // }
 });
 </script>
 

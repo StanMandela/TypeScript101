@@ -54,7 +54,6 @@ form.addEventListener('submit', (e) => {
     }
     list.render(doc, type1.value, 'end');
 });
-// Classes
 const invOne = new Invoice('mario', 'work on the mario website', 250);
 const invTwo = new Invoice('luigi', 'work on the luigi website', 300);
 let invoices = [];
